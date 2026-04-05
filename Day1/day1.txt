@@ -1,0 +1,25 @@
+Day - 1.
+Q. sum of two integer.
+Q.Relation between integer and string.
+Q.Sum and message
+ - type coercion.
+Q.Accept and Print the answer
+ -Operations and their questions
+ - Arithmetic +,-,*,/,%'
+ -Relational operator -' > ' < '
+ -Logical operator -'&&'||'
+ -Unary Operator -'++,--'
+
+Math functions 
+--Math.round()
+--Math.ceil()
+--Math.floor()
+--Math.trunc() // remove the decimal part
+--Math.pow()
+--Math.sprt()
+--Math.cbrt()
+--Math.abs()
+--Math.max()
+--Math.min()
+
+  
