@@ -85,6 +85,17 @@ const prompt = require("prompt-sync")();
 //     console.log();
 // }
 
+// let n = prompt("Enter a number");
+// for(let i = 1; i<=n; i++){
+//     let temp = 65;
+//     for(let j = 1; j<=i; j++){
+//         process.stdout.write(String.fromCharCode(temp)+"")
+//         temp++;
+//     }
+//     console.log()
+// }
+
+
 
 // Q 38. Inverted Right Angle Triangle
 // * * * * *
@@ -93,17 +104,80 @@ const prompt = require("prompt-sync")();
 // * *
 // *
 
-let n = prompt("Enter a Number ");
-for(let i = 1; i<=n; i++){
-    for(let j= 1; j<=n-i+1; j++){
-        process.stdout.write("* ")
-    }
-    console.log()
-}
+// let n = prompt("Enter a Number ");
+// for(let i = 1; i<=n; i++){
+//     for(let j= 1; j<=n-i+1; j++){
+//         process.stdout.write("* ")
+//     }
+//     console.log()
+// }
 
-// Q 39.
+// Q 39.mirror right angle triangle
 //              *
 //           * *
 //        * * *
 //     * * * *
 // * * * * *
+
+// let n = prompt("Enter a number ");
+// for(let i=1;i<=n; i++){
+//     for(let j=1; j<=n-i; j++){
+//         process.stdout.write("  ")// 2space for this pattern 
+//     }
+//     for(let j = 1; j<=i; j++){
+//         process.stdout.write("* ")
+//     }
+//     console.log()
+// }
+
+
+// Q.20 triangle
+
+// let n = prompt("Enter a number");
+// for(let i =1; i<=n; i++){
+//     for(let j=1; j<=n-i; j++){
+//         process.stdout.write(" ") // one space for this question 
+//     }
+//     for(let j = 1; j<=i; j++){
+//         process.stdout.write("* ")
+//     }
+//     console.log()
+
+// }
+
+// Q 21.
+// *              *
+//    *       *
+//        *
+//    *       *
+// *               *
+
+// let n = Number(prompt("Enter a number "));
+// for(let i=1; i<=n;i++){
+//     for(let j=1; j<=n; j++){
+//         if(i==j || i+j === n+1){
+//             process.stdout.write("* ")
+//         }else process.stdout.write("  ")
+//     }
+//     console.log()
+// }
+
+// Q 22.
+//  *         *
+//    *     *
+
+//     *   *
+
+//      * *
+
+//       *
+
+let n = Number(prompt("Enter a Number "))
+for(let i=1; i<=n; i++){
+    for(let j=1; j<=(n*2)-1; j++){
+        if(i==j || i+j === n*2) {
+            process.stdout.write("* ")
+        }else process.stdout.write("  ")
+    }
+    console.log()
+}
