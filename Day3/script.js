@@ -172,12 +172,92 @@ const prompt = require("prompt-sync")();
 
 //       *
 
-let n = Number(prompt("Enter a Number "))
+// let n = Number(prompt("Enter a Number "))
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=(n*2)-1; j++){
+//         if(i==j || i+j === n*2) {
+//             process.stdout.write("* ")
+//         }else process.stdout.write("  ")
+//     }
+//     console.log()
+// }
+
+// Q .23
+// A1
+// A1B2
+// A1B2C3
+// A1B2C3D4
+
+// let n= Number(prompt("Enter a Number "))
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=i; j++){
+//         process.stdout.write(String.fromCharCode(65 + j -1) +j);
+//     }
+//     console.log()
+// }
+
+
+// Q.24
+// A1
+// B2
+// C3
+// D4
+// let n = Number(prompt("Enter a Number "))
+// for(let i =1; i<=n; i++){
+//     console.log(String.fromCharCode(65 + i-1) + i)
+// }
+
+// Q.25
+// A1B2C3D4
+// A1B2C3
+// A1B2
+// A1
+
+// let n = Number(prompt("Enter a Number "))
+// for(let i= 1; i<=n; i++){
+//     for(let j =1; j<=n -i +1; j++){
+//         process.stdout.write(String.fromCharCode(65 + j-1)+j)
+//     }
+//     console.log()
+// }
+
+// Q.26
+// 1A
+// 1A2B
+// 1A2B3C
+// 1A2B3C4D
+
+// let n = Number(prompt("Enter a Number "))
+
+// for(let i=1; i<=n; i++){
+//     for(let j=1; j<=i; j++){
+//         let char = String.fromCharCode(65 + j - 1);
+//         process.stdout.write(j+char)
+//     }
+//     console.log()
+// }
+
+
+// Q.27
+// A
+// B2
+// C3D
+// E4F5G
+
+let n = Number(prompt("Enter a Number: "));
+let charCode = 65;
+
 for(let i=1; i<=n; i++){
-    for(let j=1; j<=(n*2)-1; j++){
-        if(i==j || i+j === n*2) {
-            process.stdout.write("* ")
-        }else process.stdout.write("  ")
+    let num = i;
+
+    for(let j=1; j<=i; j++){
+        if(j % 2 !== 0){
+            process.stdout.write(String.fromCharCode(charCode));
+            charCode++;
+        }else {
+            process.stdout.write(String(num));
+            num++;
+        }
     }
     console.log()
 }
