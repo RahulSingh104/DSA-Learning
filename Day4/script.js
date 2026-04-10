@@ -78,12 +78,43 @@
 
 // Q 24. Max element from array
 
-let arr = [10,5,100,8,3,45,19]
+// let arr = [10,5,100,8,3,45,19]
 
-let max= arr[0]
-for(let i =1; i<arr.length; i++){
-    if(arr[i]>max){
-        max= arr[i]
-    }
+// let max= arr[0]
+// for(let i =1; i<arr.length; i++){
+//     if(arr[i]>max){
+//         max= arr[i]
+//     }
+// }
+// console.log("max element" + max)
+
+
+
+//Q 25. Second max element from array
+
+// let arr = [7,3,1,10,10];
+// let max= Math.max(arr[0],arr[1]);
+// let sMax = Math.min(arr[0],arr[1]);
+
+// for(let i=2; i<arr.length; i++){
+//     if(arr[i]>max){
+//         sMax =max;
+//         max= arr[i]
+//     }else if (arr[i]>sMax && arr[i] !=max){
+//         sMax = arr[i];
+//     }
+// }
+// console.log("Second Max" + sMax);
+
+// Q 26. Reverse the array
+
+let arr = [1,2,3,4,5,6]
+
+let temp = new Array(arr.length);
+
+let i =0;
+for(let j=arr.length-1;j>=0; j--){
+    temp[i] =arr[j]
+    i++
 }
-console.log("max element" + max)
+console.log(temp)
