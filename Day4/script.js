@@ -117,4 +117,6 @@ for(let j=arr.length-1;j>=0; j--){
     temp[i] =arr[j]
     i++
 }
-console.log(temp)
+console.log(temp)   
+
+// Q.27 
