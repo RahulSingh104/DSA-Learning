@@ -108,15 +108,89 @@
 
 // Q 26. Reverse the array
 
-let arr = [1,2,3,4,5,6]
+// let arr = [1,2,3,4,5,6]
 
-let temp = new Array(arr.length);
+// let temp = new Array(arr.length);
 
-let i =0;
-for(let j=arr.length-1;j>=0; j--){
-    temp[i] =arr[j]
-    i++
-}
-console.log(temp)   
+// let i =0;
+// for(let j=arr.length-1;j>=0; j--){
+//     temp[i] =arr[j]
+//     i++
+// }
+// console.log(temp)  
 
-// Q.27 
+// let i = 0; j = arr.length -1;
+// while(i<j){
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//     i++;
+//     j--;
+// }
+// console.log(arr);
+
+// Q.27 all Zeros to left and all ones to right ;
+
+
+// let arr = [1,0,1,0,0,0,1,1,1];
+
+// let i = 0; j = 0; 
+
+// while(i<arr.length){
+//     if(arr[i]==0){
+//         let temp = arr[i]
+//         arr[i] = arr[j]
+//         arr[j] = temp;
+//         j++
+//     }
+//     i++
+// }
+// console.log(arr);
+
+
+
+// Q.28 Array left Rotation by 1 ;
+//   let arr = [ 1,2,3,4,5]
+
+//   let temp  = arr[0]
+//   for(let i =0; i<arr.length-1; i++){
+//     arr[i] = arr[i+1];
+//   }
+//   arr[arr.length -1] = temp;
+//   console.log(arr);
+
+//  let arr  = [ 1,2,3,4,7]
+//    let temp = arr[arr.length-1]
+//    for (let i =arr.length-1; i>0; i--){
+//     arr[i] = arr[i-1];
+//    }
+//    arr[0] = temp ;
+//    console.log(arr)
+// Q.29 Array left rotation by K elements
+  // let arr = [1,2,3,4,5]
+
+//   let k = 2;
+//   for(let j= 1; j<=k; j++){
+//     let copy = arr[0]
+//     for(let i=0; i<arr.length-1; i++){
+//         arr[i] = arr[i+1]
+//     }
+//     arr[arr.length-1] = copy
+//   }
+//   console.log(arr);
+
+// let temp = new Array(arr.length)
+// let  k = 3;
+// k  = k % arr.length
+
+// for(let i = 0; i<arr.length; i++){
+//     temp[i] = arr[(i+k)%arr.length]
+// }
+// console.log(temp);
+
+
+
+// Q.30 Linear search an array - if element found print the index else -1;
+
+
+

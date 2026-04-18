@@ -244,20 +244,21 @@ const prompt = require("prompt-sync")();
 // C3D
 // E4F5G
 
-let n = Number(prompt("Enter a Number: "));
-let charCode = 65;
+// let n = Number(prompt("Enter a Number: "));
+// let charCode = 65;
 
-for(let i=1; i<=n; i++){
-    let num = i;
+// for(let i=1; i<=n; i++){
+//     let num = i;
 
-    for(let j=1; j<=i; j++){
-        if(j % 2 !== 0){
-            process.stdout.write(String.fromCharCode(charCode));
-            charCode++;
-        }else {
-            process.stdout.write(String(num));
-            num++;
-        }
-    }
-    console.log()
-}
+//     for(let j=1; j<=i; j++){
+//         if(j % 2 !== 0){
+//             process.stdout.write(String.fromCharCode(charCode));
+//             charCode++;
+//         }else {
+//             process.stdout.write(String(num));
+//             num++;
+//         }
+//     }
+//     console.log()
+// }
+
