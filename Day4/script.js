@@ -1,196 +1,198 @@
 
 // Strong number 
-// let prompt = require('prompt-sync')()
+let prompt = require('prompt-sync')()
 
-// let n = Number(prompt("Enter a NUmber "))
-// let copy = n;
+let n = Number(prompt("Enter a NUmber "))
+let copy = n;
 
-// let ans = 0;
-// while(n>0){
-//     let dig = n%10;
-//     let fact = 1;
-//     for(let i =1; i<=dig; i++){
-//         fact = fact * i;
-//     }
-//     ans= ans + fact
-//     n=Math.floor(n/10)
-// }
-// if(copy==ans) console.log("Strong number");
-// else console.log("no Strong number");
+let ans = 0;
+while(n>0){
+    let dig = n%10;
+    let fact = 1;
+    for(let i =1; i<=dig; i++){
+        fact = fact * i;
+    }
+    ans= ans + fact
+    n=Math.floor(n/10)
+}
+if(copy==ans) console.log("Strong number");
+else console.log("no Strong number");
 
 // Array - array is linear DS with stores multiple value on continous memory allocation.
 
-// let arr = [10,20,30,40];
-// arr.push(100) //arr.push(val) -> insert at last 
-// arr.unshift(101) //arr.unshift(val)-> insert at first
+let arr = [10,20,30,40];
+arr.push(100) //arr.push(val) -> insert at last 
+arr.unshift(101) //arr.unshift(val)-> insert at first
 
-// console.log(arr)
-// arr.pop()// arr.pop()-> delete at last
-// console.log(arr)
-// arr.shift() //arr.shift() -> delete at first 
-// console.log(arr)
+console.log(arr)
+arr.pop()// arr.pop()-> delete at last
+console.log(arr)
+arr.shift() //arr.shift() -> delete at first 
+console.log(arr)
 
-// console.log(arr.length)
+console.log(arr.length)
 
 
 
-// arr[10] = 1000
-// console.log(arr)
+arr[10] = 1000
+console.log(arr)
 
-// let arr = new Array(4);
-// arr[0] = 10
-// arr[1] =20
-// arr[2] =30;
-// arr[3] =40;
-// arr[6] =100
+let arr = new Array(4);
+arr[0] = 10
+arr[1] =20
+arr[2] =30;
+arr[3] =40;
+arr[6] =100
 
-// console.log(arr)
+console.log(arr)
 
 
 // let prompt = require('prompt-sync')();
 
 // Accept value from user and assign in the array
 
-// let size= Number(prompt("Enter array's size"));
-// let arr = new Array(size);
+let size= Number(prompt("Enter array's size"));
+let arr = new Array(size);
 
-// for(let i= 0; i<arr.length; i++){
-//     arr[i] = Number(prompt("Enter element"));
-// }
-// console.log(arr);
+for(let i= 0; i<arr.length; i++){
+    arr[i] = Number(prompt("Enter element"));
+}
+console.log(arr);
 
 
 
 
 // Q 23. Sum of array’s element
 
-// let size = Number(prompt("Enter array's size"));
+let size = Number(prompt("Enter array's size"));
 
-// let arr = new Array(size);
-// let sum =0;
+let arr = new Array(size);
+let sum =0;
 
-// for(let i =0; i<arr.length; i++){
-//     arr[i] = Number(prompt("Enter element"));
-//     sum = sum + arr[i];
-// }
-// console.log("Sum =" + sum)
+for(let i =0; i<arr.length; i++){
+    arr[i] = Number(prompt("Enter element"));
+    sum = sum + arr[i];
+}
+console.log("Sum =" + sum)
 
 
 // Q 24. Max element from array
 
-// let arr = [10,5,100,8,3,45,19]
+let arr = [10,5,100,8,3,45,19]
 
-// let max= arr[0]
-// for(let i =1; i<arr.length; i++){
-//     if(arr[i]>max){
-//         max= arr[i]
-//     }
-// }
-// console.log("max element" + max)
+let max= arr[0]
+for(let i =1; i<arr.length; i++){
+    if(arr[i]>max){
+        max= arr[i]
+    }
+}
+console.log("max element" + max)
 
 
 
 //Q 25. Second max element from array
 
-// let arr = [7,3,1,10,10];
-// let max= Math.max(arr[0],arr[1]);
-// let sMax = Math.min(arr[0],arr[1]);
+let arr = [7,3,1,10,10];
+let max= Math.max(arr[0],arr[1]);
+let sMax = Math.min(arr[0],arr[1]);
 
-// for(let i=2; i<arr.length; i++){
-//     if(arr[i]>max){
-//         sMax =max;
-//         max= arr[i]
-//     }else if (arr[i]>sMax && arr[i] !=max){
-//         sMax = arr[i];
-//     }
-// }
-// console.log("Second Max" + sMax);
+for(let i=2; i<arr.length; i++){
+    if(arr[i]>max){
+        sMax =max;
+        max= arr[i]
+    }else if (arr[i]>sMax && arr[i] !=max){
+        sMax = arr[i];
+    }
+}
+console.log("Second Max" + sMax);
 
 // Q 26. Reverse the array
 
-// let arr = [1,2,3,4,5,6]
+let arr = [1,2,3,4,5,6]
 
-// let temp = new Array(arr.length);
+let temp = new Array(arr.length);
 
-// let i =0;
-// for(let j=arr.length-1;j>=0; j--){
-//     temp[i] =arr[j]
-//     i++
-// }
-// console.log(temp)  
+let i =0;
+for(let j=arr.length-1;j>=0; j--){
+    temp[i] =arr[j]
+    i++
+}
+console.log(temp)  
 
-// let i = 0; j = arr.length -1;
-// while(i<j){
-//     let temp = arr[i];
-//     arr[i] = arr[j];
-//     arr[j] = temp;
-//     i++;
-//     j--;
-// }
-// console.log(arr);
+let i = 0; j = arr.length -1;
+while(i<j){
+    let temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+    i++;
+    j--;
+}
+console.log(arr);
 
-// Q.27 all Zeros to left and all ones to right ;
+Q.27 all Zeros to left and all ones to right ;
 
 
-// let arr = [1,0,1,0,0,0,1,1,1];
+let arr = [1,0,1,0,0,0,1,1,1];
 
-// let i = 0; j = 0; 
+let i = 0; j = 0; 
 
-// while(i<arr.length){
-//     if(arr[i]==0){
-//         let temp = arr[i]
-//         arr[i] = arr[j]
-//         arr[j] = temp;
-//         j++
-//     }
-//     i++
-// }
-// console.log(arr);
+while(i<arr.length){
+    if(arr[i]==0){
+        let temp = arr[i]
+        arr[i] = arr[j]
+        arr[j] = temp;
+        j++
+    }
+    i++
+}
+console.log(arr);
 
 
 
 // Q.28 Array left Rotation by 1 ;
-//   let arr = [ 1,2,3,4,5]
+  let arr = [ 1,2,3,4,5]
 
-//   let temp  = arr[0]
-//   for(let i =0; i<arr.length-1; i++){
-//     arr[i] = arr[i+1];
-//   }
-//   arr[arr.length -1] = temp;
-//   console.log(arr);
+  let temp  = arr[0]
+  for(let i =0; i<arr.length-1; i++){
+    arr[i] = arr[i+1];
+  }
+  arr[arr.length -1] = temp;
+  console.log(arr);
 
-//  let arr  = [ 1,2,3,4,7]
-//    let temp = arr[arr.length-1]
-//    for (let i =arr.length-1; i>0; i--){
-//     arr[i] = arr[i-1];
-//    }
-//    arr[0] = temp ;
-//    console.log(arr)
+ let arr  = [ 1,2,3,4,7]
+   let temp = arr[arr.length-1]
+   for (let i =arr.length-1; i>0; i--){
+    arr[i] = arr[i-1];
+   }
+   arr[0] = temp ;
+   console.log(arr)
 // Q.29 Array left rotation by K elements
-  // let arr = [1,2,3,4,5]
+  let arr = [1,2,3,4,5]
 
-//   let k = 2;
-//   for(let j= 1; j<=k; j++){
-//     let copy = arr[0]
-//     for(let i=0; i<arr.length-1; i++){
-//         arr[i] = arr[i+1]
-//     }
-//     arr[arr.length-1] = copy
-//   }
-//   console.log(arr);
+  let k = 2;
+  for(let j= 1; j<=k; j++){
+    let copy = arr[0]
+    for(let i=0; i<arr.length-1; i++){
+        arr[i] = arr[i+1]
+    }
+    arr[arr.length-1] = copy
+  }
+  console.log(arr);
 
-// let temp = new Array(arr.length)
-// let  k = 3;
-// k  = k % arr.length
+let temp = new Array(arr.length)
+let  k = 3;
+k  = k % arr.length
 
-// for(let i = 0; i<arr.length; i++){
-//     temp[i] = arr[(i+k)%arr.length]
-// }
-// console.log(temp);
+for(let i = 0; i<arr.length; i++){
+    temp[i] = arr[(i+k)%arr.length]
+}
+console.log(temp);
 
 
 
 // Q.30 Linear search an array - if element found print the index else -1;
 
+let prompt = require('prompt-sync')();
 
+let target  = Number(prompt("Enter a target value "))
 
