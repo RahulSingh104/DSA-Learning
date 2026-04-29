@@ -85,11 +85,39 @@
 // }
 // console.log(ans)
 
-let word = ["attention","people","attire", "hello","attend"];
-let s = "at";
-let count = 0;
-for(let i =0; i<word.length; i++){
-  if(word[i].startsWith(s)) count++;
+// let word = ["attention","people","attire", "hello","attend"];
+// let s = "at";
+// let count = 0;
+// for(let i =0; i<word.length; i++){
+//   if(word[i].startsWith(s)) count++;
 
-}
-console.log(count)
+// }
+// console.log(count)
+
+// let s = "Hello Bhai Kya Haal Chaal";
+// let arr = s.split(" ");
+// console.log(arr)
+
+
+// let s = "hello baby kya haal chaal"
+// let ans = '';
+// let arrStr = s.split(" ")
+// for(let i= 0; i<arrStr.length; i++){
+//     let word = arrStr[i]
+//     if(word.length<=2) ans = ans + word.toUpperCase()+" ";
+//     else {
+//         ans = ans + word.charAt(0).toUpperCase()
+//                   + word.substring(1,word.length-1)
+//                   + word.charAt(word.length-1).toUpperCase()+ " ";
+//     }
+// }
+// console.log(ans)
+
+
+// let str = "apple,banana,grape";
+// let result = str.split(",");
+// console.log(result[1]);
+
+let str = "hello";
+str[0] = "H";
+console.log(str);
