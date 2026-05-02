@@ -121,3 +121,27 @@
 let str = "hello";
 str[0] = "H";
 console.log(str);
+
+
+
+// Accept a string and print the frequency of each character present in the String  -- question said that kon sa character baar aaya hai  -- iss question ko solve karne ke trika hai DSA map or BitMap
+
+// -- aak array banate hai 122 length ka array banayenge
+let prompt = require('prompt-sync')();
+let s = prompt("Enter a String"); // ex- hello ko sorting order main hi print karna hai 
+
+let freqArr  = new Array(123).fill(0);
+for(let i=0;i<s.length; i++){
+    let ascii = s.charCodeAt(i);
+    freqArr[ascii] = freqArr[ascii]+1;
+}
+for(let i=0; i<freqArr.length; i++){
+    if(freqArr[i]>0){
+        console.log(String.fromCharCode(i)+" -> "+freqArr[i])
+    }
+} // isske tarke ko bitmap se baana hai aur iska TC - o(n) SC - N
+
+
+
+// Q.62 Check Two Strings are Anagram or not Anagrams words have the same word length & same character count Examples of anagram words are arc and car,state and taste night and thing etc .
+
